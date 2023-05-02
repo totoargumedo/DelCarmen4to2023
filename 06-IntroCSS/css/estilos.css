@@ -1,0 +1,24 @@
+
+h1
+{
+  color: red; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  text-align: center;
+  background-color: aquamarine;
+  height: 200px;
+  width: 300px;
+}
+
+section
+{
+    background-color: brown;
+    width: 600px;
+}
+
+main
+{
+    background-color: darkorange;
+}
+body{
+    background-color: darkmagenta;
+}
