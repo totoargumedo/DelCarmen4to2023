@@ -1,0 +1,11 @@
+.logo-tipo{
+    height: 15px;
+}
+
+.carta-contenedor{
+    height: 450px;
+    width: 300px;
+    background-image: url("../assets/fireBackground.jpg ");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
