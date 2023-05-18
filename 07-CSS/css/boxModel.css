@@ -1,11 +1,82 @@
-.logo-tipo{
-    height: 15px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.carta-contenedor{
-    height: 450px;
-    width: 300px;
-    background-image: url("../assets/fireBackground.jpg ");
-    background-size: cover;
-    background-repeat: no-repeat;
+.card{
+    width: 250px;
+    background-color: white;
+    border: 5px solid orange;
+    border-radius: 5%;
+    margin: 50px auto;
+}
+.card-header-background{
+    background-color: orange;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.image{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hp{
+    font-size: medium;
+    background-color: white;
+    padding: 2px;
+    margin: 15px;
+    width: 80px;
+    border-radius: 30px;
+    float: right;
+    text-align: center;
+}
+.hp-text{
+    font-size: x-small;
+    margin-right: 5px;
+}
+
+.name{
+    text-align: center;
+    margin: 10px;
+}
+
+.type-container{
+    text-align: center;
+}
+
+.type{
+    font-size: small;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 30px;
+}
+
+.type-fire{
+    color:white;
+    background-color: orange;
+}
+
+.type-flying {
+    color: white;
+    background-color:darkseagreen;
+}
+
+.stats-table{
+    width: 80%;
+    margin: 15px auto;
+}
+
+.stats-table tr th{
+    padding: 5px 25px;
+}
+
+.stats-table td{
+    padding: 5px 10px;
+    font-size: small;
 }
