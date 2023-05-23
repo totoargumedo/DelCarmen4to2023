@@ -1,82 +1,88 @@
+:root{
+    --primary: orange;
+    --secondary: white;
+    --tertiary: green;
+}
+
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.card{
+.card-container{
     width: 250px;
-    background-color: white;
-    border: 5px solid orange;
-    border-radius: 5%;
-    margin: 50px auto;
-}
-.card-header-background{
-    background-color: orange;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-}
-
-.image{
-    display: block;
-    width: 80%;
+    background-color: var(--secondary);
+    border:6px solid var(--primary);
+    border-radius: 15px;
     margin: 0 auto;
 }
 
-.hp{
+.card-image{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-hp{
     font-size: medium;
-    background-color: white;
+    background-color: var(--secondary);
     padding: 2px;
-    margin: 15px;
+    margin:15px;
     width: 80px;
-    border-radius: 30px;
     float: right;
     text-align: center;
+    border-radius: 30px;
 }
-.hp-text{
+
+.card-hp-minitext{
     font-size: x-small;
     margin-right: 5px;
 }
 
-.name{
+.card-header{
+    background-color: var(--primary);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.card-name{
     text-align: center;
     margin: 10px;
 }
 
-.type-container{
+.card-type-container{
     text-align: center;
 }
 
-.type{
+.card-type{
     font-size: small;
     font-weight: 600;
-    color: white;
-    display: inline-block;
+    color:var(--secondary);
     padding: 0 10px;
     border-radius: 30px;
+    display: inline-block;
 }
 
-.type-fire{
-    color:white;
-    background-color: orange;
+.fire{
+    background-color: var(--primary);
 }
 
-.type-flying {
-    color: white;
-    background-color:darkseagreen;
+.flying{
+    background-color: var(--tertiary);
 }
 
-.stats-table{
+    
+.card-stats{
     width: 80%;
     margin: 15px auto;
 }
 
-.stats-table tr th{
+.card-stats th{
     padding: 5px 25px;
 }
 
-.stats-table td{
+.card-stats td{
     padding: 5px 10px;
     font-size: small;
 }
