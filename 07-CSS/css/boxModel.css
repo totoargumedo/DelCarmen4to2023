@@ -10,12 +10,23 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.card-gallery-header{
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+.card-gallery{
+    padding: 30px;
+}   
+
 .card-container{
     width: 250px;
     background-color: var(--secondary);
     border:6px solid var(--primary);
     border-radius: 15px;
     margin: 0 auto;
+    position: relative;
 }
 
 .card-image{
@@ -85,4 +96,20 @@
 .card-stats td{
     padding: 5px 10px;
     font-size: small;
+}
+
+.card-type-logo{
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+}
+
+.logo-contact{
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    z-index: 1;
 }
