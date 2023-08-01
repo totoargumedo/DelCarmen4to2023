@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.botonera{
+    background-color: #ff4d6d;
+    width: 500px;
+    height: 200px;
+    border-radius: 30px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.boton{
+    background-color: #ffb3c1;
+    width: 130px;
+    height: 60px;
+    border-radius: 45px;
+    box-shadow: 5px 2px rgb(0, 0, 0);
+    color:darkorchid;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 1.5;    
+}
+
+.boton:hover{
+    background-color: darkorchid;
+    color: #ffb3c1;
+    transform:scale(2);
+    transition: all 1.5;
+}
