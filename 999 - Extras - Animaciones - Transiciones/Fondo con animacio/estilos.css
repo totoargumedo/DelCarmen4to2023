@@ -1,0 +1,20 @@
+
+
+
+.item{
+    background: rgb(13, 25, 185);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    clip-path: circle(50% at bottom left);
+    transition-property: clip-path;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+.container:hover .item{
+    clip-path: circle(150% at bottom left);
+    transition-duration: 5s;
+}
+

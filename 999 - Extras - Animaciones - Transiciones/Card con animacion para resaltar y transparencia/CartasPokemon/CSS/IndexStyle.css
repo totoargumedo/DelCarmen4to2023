@@ -1,0 +1,133 @@
+*
+{
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body
+{
+    background-color: gray;
+    margin: 0;
+    display: flex;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    gap: 420px;
+    padding: 5%;
+
+}
+
+.CartaPokemon
+{
+    background-color: gray;
+    opacity:25%;
+    position:absolute;
+    height: 400px;
+    width: 250px;
+    border: black solid 6px;
+    border-radius: 10px;
+}
+.CartaPokemon:hover{
+    animation: selecciónCarta 1s forwards;
+}
+@keyframes selecciónCarta {
+    from{
+        opacity:25%;
+        transform: scale(1.0)
+    }
+    to{
+        opacity:100%;
+        transform: scale(1.2)
+       
+    }
+}
+.IlustraciónFuego
+{
+    height: 50%;
+    background-image: url(../Assets/RecursosTipos/FuegoFondo.jpg);
+}
+.IlustraciónAgua
+{
+    height: 50%;
+    background-image: url(../Assets/RecursosTipos/AguaFondo.png);
+}
+.IlustraciónPlanta
+{
+    height: 50%;
+    background-image: url(../Assets/RecursosTipos/PlantaFondo.png);
+}
+.Descripción
+{
+    height: 50%;
+    background-color: rgb(211, 211, 211);
+    
+}
+.HP
+{
+    margin: 0;
+    margin-left: 100px;
+    color: white;
+}
+.Imagen
+{
+    width: 160px;
+    height:160px;
+    margin-left: 0;
+
+}
+.Fuego
+{
+    background-color: orange;
+}
+.Volador
+{
+    background-color: lightblue;
+}
+.Dragon
+{
+    color:white;
+    background-color: rgb(177, 50, 202);
+}
+.Agua
+{
+    color:white;
+    background-color: rgb(22, 7, 156);
+}
+.Veneno
+{
+    color:white;
+    background-color: rgb(73, 3, 87);
+}
+.Planta
+{
+    background-color: rgb(22, 221, 39);
+}
+.Tipos
+{
+    margin: auto;
+}
+.Nombre
+{
+    margin: 0;
+}
+@media (min-width: 480px)
+{
+    section
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    section
+    {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 280px;
+    }
+}

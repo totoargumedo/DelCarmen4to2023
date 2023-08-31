@@ -1,0 +1,22 @@
+
+     .botonera {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .boton {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        background-color: #04ff00;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.2s;
+    }
+    .boton:hover {
+        transform: scale(1.6);
+        background-color: #ad00b3;
+        background: radial-gradient(circle, #007BFF, transparent);
+         }
