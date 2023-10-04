@@ -1,6 +1,9 @@
 let numero1;
 let numero2;
 let resultado;
+let operacion;
+let opcion;
+
 function pedirDatos() {
   //BLOQUE DE FUNCION O "QUE HACE"
 
@@ -36,7 +39,73 @@ function division() {
   console.log("El resultado de la division es" + " " + resultado);
 }
 
-pedirDatos();
-suma();
-resta();
-division();
+// pedirDatos();
+// suma();
+// resta();
+// division();
+
+//pedirDatos();
+// suma();
+// resta();
+// division();
+
+function menu() {
+  operacion = prompt(
+    "Ingrese la operacion que desea realizar. Ingrese suma, resta o division segun corresponda"
+  );
+
+  console.log(operacion);
+
+  operacion = operacion.toLocaleLowerCase().trim();
+  // operacion = operacion.trim()
+
+  while (
+    operacion != "suma" &&
+    operacion != "resta" &&
+    operacion != "division"
+  ) {
+    operacion = prompt(
+      "Opcion incorrecta. Ingrese suma, resta o division segun corresponda"
+    );
+    operacion = operacion.toLocaleLowerCase().trim();
+    console.log(operacion);
+  }
+
+  if (operacion === "suma") {
+    pedirDatos();
+    suma();
+    menuFinal();
+  } else if (operacion === "resta") {
+    pedirDatos();
+    resta();
+    menuFinal();
+  } else if (operacion === "division") {
+    pedirDatos();
+    division();
+    menuFinal();
+  }
+}
+
+function menuFinal() {
+  opcion = prompt(
+    "Desea terminar el programa o realizar nueva operacion. Ingrese otra o terminar segun corresponda"
+  );
+
+  opcion = opcion.toLocaleLowerCase().trim();
+
+  while (opcion != "otra" && opcion != "terminar") {
+    opcion = prompt(
+      "Opcion incorrecta. Ingrese otra o terminar segun corresponda"
+    );
+
+    opcion = opcion.toLocaleLowerCase().trim();
+  }
+
+  if (opcion === "otra") {
+    menu();
+  } else {
+    console.log("Programa terminado");
+  }
+}
+
+menu();
