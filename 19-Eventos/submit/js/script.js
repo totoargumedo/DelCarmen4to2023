@@ -1,11 +1,19 @@
-// const personajes = [];
+const personajes = [];
 
-// const form = document.getElementById("cargaPJ");
+const form = document.getElementById("cargaPJ");
 
-// form.addEventListener("submit", (event) => {
-//   event.preventDefault();
+form.addEventListener("submit", (evento) => {
+  evento.preventDefault();
+  console.log(form.elements.title.value);
+  const pj = {
+    name: form.elements.title.value,
+    description: form.elements.description.value,
+    image: form.elements.image.value,
+  };
 
-//   console.log(form.elements.title.value);
+  personajes.push(pj);
 
-//   console.log(personajes);
-// });
+  console.log(personajes);
+
+  form.reset();
+});
