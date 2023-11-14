@@ -23,9 +23,9 @@ const simonBoton = document.getElementById("simon");
 const iblockBoton = document.getElementById("iblock");
 const marioBoton = document.getElementById("mario");
 
-const render = () => {
+const render = (busqueda) => {
   const card = document.getElementById("cardPJ");
-  let pj = personajes.find((personaje) => personaje.name === "Simon Belmont");
+  let pj = personajes.find((personaje) => personaje.name === busqueda);
 
   card.innerHTML = "";
 
@@ -38,36 +38,12 @@ const render = () => {
   `;
 };
 
-function tetrisRender() {
-  const card = document.getElementById("cardPJ");
-  let pj = personajes.find((personaje) => personaje.name === "Barrita tetris");
-
-  card.innerHTML = "";
-
-  card.innerHTML = `
-                    <p class="card-title">${pj.name}</p>
-                    <div class="card-img"
-                    style="background-image: url('${pj.image}')">
-                    </div>
-                    <p class="card-description">${pj.description}</p>
-  `;
-}
-
-function marioRender() {
-  const card = document.getElementById("cardPJ");
-  let pj = personajes.find((personaje) => personaje.name === "Mario");
-
-  card.innerHTML = "";
-
-  card.innerHTML = `
-                    <p class="card-title">${pj.name}</p>
-                    <div class="card-img"
-                    style="background-image: url('${pj.image}')">
-                    </div>
-                    <p class="card-description">${pj.description}</p>
-  `;
-}
-
-simonBoton.addEventListener("click", render);
-iblockBoton.addEventListener("click", tetrisRender);
-marioBoton.addEventListener("click", marioRender);
+simonBoton.addEventListener("click", () => {
+  render("Simon Belmont");
+});
+iblockBoton.addEventListener("click", () => {
+  render("Barrita tetris");
+});
+marioBoton.addEventListener("click", () => {
+  render("Mario");
+});
