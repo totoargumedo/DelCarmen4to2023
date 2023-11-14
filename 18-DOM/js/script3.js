@@ -20,3 +20,10 @@
 // console.log(titulo);
 
 // titulo.setAttribute("style", "color:red;");
+
+// div centrado en pantalla
+
+// personaje de serie, peli, juego o artista
+// mostrar nombre, descripcion, foto desde url de internet y poderes, albunes, etc
+//tomar los datos desde prompt, armar un objeto "personaje o artista"
+// crear un elemento div dentro del anterior con forma de tarjeta y que tome los elementos desde el objeto

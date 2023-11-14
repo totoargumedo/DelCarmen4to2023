@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    --primary:#6D7275;
+    --secondary:#C20114;
+    --tertiary: #0C120C;
+    --texColor: #C7D6D5;
+}
+
+header{
+    background-color: var(--secondary);
+    color: var(--texColor);
+    min-height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--tertiary);
+    color: var(--texColor);
+    min-height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    min-height: 80vh;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    border-radius: 35px;
+}
+
+.title {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+#textBox{
+    width: 80%;
+    height: 50px;
+    border-radius: 35px;
+    background-color: var(--primary);
+    color: var(--texColor);
+}
+
+.button-panel{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn{
+    width: 75px;
+    height: 45px;
+    margin: 3px;
+    border-radius: 20px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--texColor);
+    background-color: var(--secondary);
+}
+

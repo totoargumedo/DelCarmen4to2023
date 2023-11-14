@@ -11,13 +11,13 @@ titulito.innerText = "Manso Titulo";
 //crear atibutos
 titulito.setAttribute("style", "color:red;display:flex;");
 
-// //agregar clases
+//agregar clases
 titulito.classList = "azul";
 
-// //agregar elemento o nodo html
+//agregar elemento o nodo html
 let contenedor = document.querySelector("div");
 
-// // contenedor.innerHTML = titulito; reemplaza el contenido html del elemnto seleccionado
+// contenedor.innerHTML = titulito; reemplaza el contenido html del elemnto seleccionado
 contenedor.appendChild(titulito);
 
-// // console.log(contenedor);
+// console.log(contenedor);
